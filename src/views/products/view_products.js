@@ -62,8 +62,8 @@ export default class view_products extends Component {
                         <Image style={styles.imagen_view}
                             source={{ uri: this.state.data.strDrinkThumb }}
                         />
-                        {this.state.ingredientes.map((item) =>
-                            <View><Text style={styles.ingredienteslista}>{item}</Text></View>
+                        {this.state.ingredientes.map((item,i) =>
+                            <View key={i}><Text style={styles.ingredienteslista}>{item}</Text></View>
                         )}
                         <Text style={styles.subtitulo}>How to prepare</Text>
                         <Text style={styles.instrucciones}>{this.state.data.strInstructions}</Text>
