@@ -25,7 +25,6 @@ export default class App extends Component {
             listaView: [],
             modalFiltro: false
         };
-
     }
 
     componentDidMount() {
@@ -140,7 +139,6 @@ export default class App extends Component {
                 />
 
 
-
                 <View style={styles.centeredView}>
                     <Modal
                         animationType="slide"
@@ -153,10 +151,10 @@ export default class App extends Component {
                         <View style={styles.centeredView}>
                             <View style={styles.modalView}>
                                 <Text style={styles.modalText}>FILTRO</Text>
-                                <TextInput style={{ backgroundColor: '#ddd', width: '100%', fontSize: 15, borderRadius: 5 }}
+                                <TextInput style={styles.texto_filtro}
                                     value={this.state.textoFiltro}
                                     onChangeText={(textoFiltro) => { this.filtrando(textoFiltro) }}
-                                    placeholder='Ingrese filtro...'
+                                    placeholder='Ingrese el nombre del trago...'
                                     onSubmitEditing={() => { this.guardarComentario(this.state.comentario) }} />
                                 <Text style={{ fontSize: 10 }}>Ingrese al menos 3 caracteres</Text>
                                 <ScrollView style={{ width: '100%' }}>
@@ -168,16 +166,10 @@ export default class App extends Component {
                                     }
                                 </ScrollView>
                             </View>
-
                         </View>
-
                     </Modal>
-
-
                 </View>
             </View>
-
         )
     }
-
 }

@@ -24,8 +24,10 @@ export default StyleSheet.create({
     imagen_view:
         { height: 300, borderRadius: 5, margin: 15 },
     cuadro_index:
-        { marginHorizontal: 10, marginVertical: 5, backgroundColor: "#a8bac1", height: 160, borderRadius: 5, shadowOpacity: 0.25, 
-            shadowRadius: 3.84, elevation: 5 },
+    {
+        marginHorizontal: 10, marginVertical: 5, backgroundColor: "#a8bac1", height: 160, borderRadius: 5, shadowOpacity: 0.25,
+        shadowRadius: 3.84, elevation: 5
+    },
     titulo_index:
         { fontSize: 24, margin: 5, width: 180 },
     ingrediente:
@@ -43,9 +45,13 @@ export default StyleSheet.create({
     centeredView:
         { flex: 1, justifyContent: "center", alignItems: "center", marginTop: 22 },
     modalView:
-        { margin: 20, backgroundColor: "white", maxHeight: 500, borderRadius: 20, padding: 35, width: '90%', alignItems: "center", 
-            shadowColor: "#000", shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.25, shadowRadius: 3.84, elevation: 5 },
+    {
+        margin: 20, backgroundColor: "white", maxHeight: 500, borderRadius: 20, padding: 35, width: '90%', alignItems: "center",
+        shadowColor: "#000", shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.25, shadowRadius: 3.84, elevation: 5
+    },
     modalText:
-        { marginBottom: 26, textAlign: "center" }
+        {fontSize:24, marginBottom: 26, textAlign: "center" },
+    texto_filtro:
+        { backgroundColor: '#eee', width: '100%', fontSize: 15, borderRadius: 5 }
 
 })
